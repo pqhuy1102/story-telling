@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+
+<div class="center">
+    <div class="container">
+       <label class="close-btn fas fa-times" title="close"></label>
+       <div class="text">
+            Register
+       </div>
+       <form action="#" [formGroup]="userForm" (ngSubmit)="register()">
+          <div class="data">
+             <label>Email</label>
+             <input type="email" formControlName="username" required>
+          </div>
+          <div class="data">
+             <label>Password</label>
+             <input type="password" formControlName="password" required>
+          </div>
+          <div class="btn">
+             <div class="inner"></div>
+             <button type="submit" [disabled]="userForm.invalid">Submit</button>
+          </div>
+       </form>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+
+<div class="center">
+    <div class="container">
+       <label class="close-btn fas fa-times" title="close"></label>
+       <div class="text">
+            Login
+       </div>
+       <form action="#">
+          <div class="data">
+            <label>Email</label>
+            <input type="email" required>
+          </div>
+          <div class="data">
+             <label>Password</label>
+             <input type="password" required>
+          </div>
+          <div class="forgot-pass">
+             <a routerLink="/forgotPassword">Forgot Password?</a>
+          </div>
+          <div class="btn">
+             <div class="inner"></div>
+             <button type="submit">Submit</button>
+          </div>
+          <div class="signup-link">
+             Not a member? <a routerLink="/register">Register now!</a>
+          </div>
+       </form>
+    </div>
+</div>
